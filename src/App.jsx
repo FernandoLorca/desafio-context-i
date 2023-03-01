@@ -1,5 +1,17 @@
+import Nav from "./components/Nav";
+import Main from "./components/Main/Main";
+import Footer from "./components/Footer";
+
 function App() {
-  return <div>app</div>;
+  return (
+    <>
+      <Nav />
+
+      <Main />
+
+      <Footer />
+    </>
+  );
 }
 
 export default App;
