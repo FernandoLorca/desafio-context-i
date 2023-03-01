@@ -1,16 +1,18 @@
+import { NavLink } from "react-router-dom";
+
 const Nav = () => {
   return (
     <nav className="bg-green-500 text-white py-3">
       <ul className="flex justify-center gap-2">
         <li className="border-r-2 pr-2">
-          <a href="#" className="hover:underline">
+          <NavLink to="/" className="hover:underline">
             Home
-          </a>
+          </NavLink>
         </li>
         <li>
-          <a href="#" className="hover:underline">
+          <NavLink to="/favoritos" className="hover:underline">
             Favoritos
-          </a>
+          </NavLink>
         </li>
       </ul>
     </nav>
