@@ -5,25 +5,11 @@ import Main from "../components/Main/Main";
 import Footer from "../components/Footer";
 
 const Home = () => {
-  const [dataPhotos, setDataPhotos] = useState([]);
-
-  const getPhotos = async () => {
-    const res = await fetch("../fotos.json");
-    const data = await res.json();
-
-    setDataPhotos(data.photos);
-  };
-
-  useEffect(() => {
-    getPhotos();
-  }, []);
-
-  console.log(dataPhotos);
   return (
     <>
       <Nav />
 
-      <Main dataPhotos={dataPhotos} />
+      <Main />
 
       <Footer />
     </>
