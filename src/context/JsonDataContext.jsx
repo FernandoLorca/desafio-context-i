@@ -7,7 +7,7 @@ const JsonDataContextProvider = ({ children }) => {
   const [likedPhotos, setLikedPhotos] = useState([]);
 
   const getPhotos = async () => {
-    const res = await fetch("../fotos.json");
+    const res = await fetch("/fotos.json");
     const data = await res.json();
 
     setDataPhotos(data.photos);
